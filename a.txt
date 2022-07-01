@@ -1,0 +1,7 @@
+printf 
+scanf 
+if else statements
+loops for loop while loop
+arrays 
+pointers
+recursion method
