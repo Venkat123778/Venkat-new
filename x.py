@@ -7,3 +7,4 @@ def print_primes(max_num):
                 break
         if is_prime:
             print(num)
+	
