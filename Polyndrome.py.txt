@@ -1,0 +1,31 @@
+def is_palindrome(num):
+    """
+    Checks if a given number is a palindrome.
+
+    Arguments:
+    num -- The number to be checked
+
+    Returns:
+    True if the number is a palindrome, False otherwise
+    """
+    # Convert the number to a string
+    num_str = str(num)
+
+    # Check if the string representation of the number is equal to its reverse
+    if num_str == num_str[::-1]:
+        return True
+    else:
+        return False
+
+def print_palindrome_numbers(start, end):
+    """
+    Prints all palindrome numbers within a given range.
+
+    Arguments:
+    start -- The starting number of the range
+    end -- The ending number of the range
+    """
+    print(f"Palindrome numbers between {start} and {end}:")
+    for num in range(start, end + 1):
+        if is_palindrome(num):
+            print(num)
